@@ -72,7 +72,7 @@ a {
 }
 
 .body__content__text__parr {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: var(--poppins-font);
     font-weight: 300;
     font-style: normal;
@@ -83,7 +83,7 @@ a {
 }
 
 .body__content__text__subtitle{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: var(--poppins-font);
     font-weight: 500;
     font-style: normal;
@@ -146,7 +146,7 @@ a {
 .body__content__image {
     width: 300px;
     height: 350px;
-    border-radius: 40px 5px 5px 40px;
+    border-radius: 40px;
     object-fit: cover;
     box-shadow: 15px 10px 1px black;
     margin-top: 65px;

@@ -1,0 +1,17 @@
+strong{
+  color: rgb(0, 255, 255);  
+}
+
+#n1{
+    color:#FFF;
+}
+
+li, ul, ol {
+    color: var(--primary-color);
+    font-family: var(--poppins-font);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem;
+    margin: 2px;
+    text-align: justify;
+}
