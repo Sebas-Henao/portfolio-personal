@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #FFF ;
+    --secondary-color: #09122C;
+    --terthiary-color: black; 
+
+    --poppins-font: 'Poppins', sans-serif;
+};
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 90vh;
+    background-color: var(--secondary-color) ;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navBar {
+    padding: 40px 0px 0px 290px;
+}
+
+.navBar__nav {
+    display: flex;
+    gap: 50px;
+    width: 40%;
+}
+
+.navBar__nav__links {
+    font-size: 1.3rem;
+    font-family: var(--poppins-font);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color);
+}
+
+.navBar__nav__links:hover {
+    color:rgba(151, 151, 151, 0.774)
+}
+
+.navBar__nav__links:active {
+    color: rgba(21, 228, 255, 0.692)
+}
+
+.body__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 270px 10px 270px;
+    padding: 25px 10px;
+}
+
+.body__content__text {
+    padding: 20px 10px;
+    height: 70vh;
+}
+
+.body__content__text__title {
+    font-size: 1.8rem;
+    font-family: var(--poppins-font);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    margin: 3px 10px 25px 10px;
+}
+
+.body__content__text__parr {
+    font-size: 1rem;
+    font-family: var(--poppins-font);
+    font-weight: 300;
+    font-style: normal;
+    color: var(--primary-color);
+    text-align: justify;
+    margin: 50px 90px 20px 20px;
+    height: auto;
+}
+
+.body__content__text__subtitle{
+    font-size: 1rem;
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-style: normal;
+    color: var(--primary-color);
+    text-align: justify;
+    margin: 30px 80px 20px 20px;
+    height: auto;
+}
+
+.body__content__text__button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.body__content__text__button__links {
+    border-radius: 9px;
+    border: 1px solid var(--primary-color);
+    width: fit-content;
+    padding: 4px 10px;
+    color: var(--primary-color);
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+}
+
+.body__content__text__button__links img {
+    height: 40px;
+    width: 40px;
+    margin-right: 7px;
+}
+
+#git {
+    background-color: var(--primary-color);
+    color:var(--terthiary-color);
+    border: 2px solid black;
+    box-shadow: 5px 2px 1px black;
+}
+
+#git:hover {
+    font-size: 1.2rem;
+    padding: 5px 12px;
+}
+
+#In {
+    background-color: #0288d15c ;
+    border: 2px solid black;
+    box-shadow: 5px 2px 1px black;
+}
+
+#In:hover {
+    font-size: 1.2rem;
+    padding: 5px 12px;
+}
+
+.body__content__image {
+    width: 300px;
+    height: 350px;
+    border-radius: 40px 5px 5px 40px;
+    object-fit: cover;
+    box-shadow: 15px 10px 1px black;
+    margin-top: 65px;
+
+    animation: levitar 3s linear 0.3s infinite;
+}
+
+@keyframes levitar {
+    0%{transform: rotate(5deg)}
+    50%{transform: translate(0px, -15px); 
+        box-shadow:20px 20px 10px rgba(0, 0, 0, 0.329);}
+    100%{transform: rotate(5deg)}
+}
+
+.footer { 
+    background-color: rgba(151, 151, 151, 0.315);
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    justify-items: center;
+    color: var(--primary-color);
+    font-family: var(--poppins-font);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+@media (max-width: 1200px){
+    .navBar{
+        padding: 20px 0;
+        text-align: center;
+    }
+    .navBar__nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .navBar__nav__links{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .body__content{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+    .body__content__text{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .body__content__text__title,
+    .body__content__text__parr,
+    .body__content__text__subtitle {
+        width: 90%;
+        margin: 10px auto;
+        text-align: justify;
+    }
+
+    .body__content__image{
+        margin: 20px auto;
+        width: 200px;
+        height: 250px;
+    }
+
+    .body__content__text__button__links{
+        margin-bottom: 60px;;
+    }
+
+    .footer{
+        font-size: 0.8rem;
+    }
+}
