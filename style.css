@@ -16,7 +16,10 @@
 body {
     box-sizing: border-box;
     height: 90vh;
-    background-color: var(--secondary-color) ;
+    background-image: url('./assets/background.jpg');
+    background-repeat:repeat;
+    background-size: cover auto;
+    background-position: center;
 }
 
 a {
@@ -52,7 +55,7 @@ a {
 .body__content {
     display: flex;
     justify-content: space-between;
-    margin: 25px 270px 10px 270px;
+    margin: 25px 120px 30px 120px;
     padding: 25px 10px;
 }
 
@@ -227,3 +230,4 @@ a {
         font-size: 0.8rem;
     }
 }
+
