@@ -7,11 +7,12 @@ strong{
 }
 
 li, ul, ol {
-    color: var(--primary-color);
-    font-family: var(--poppins-font);
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.1rem;
-    margin: 2px;
-    text-align: justify;
+  list-style-type: none;
+  color: var(--primary-color);
+  font-family: var(--poppins-font);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.1rem;
+  margin: 5px;
+  text-align: justify;
 }
