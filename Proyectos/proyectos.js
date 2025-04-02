@@ -1,18 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
     fetch("services.json")
         .then(response => response.json())
-        .then(data => response.json(data))
-        .then(error => console.error("Error cargando los servicios:", error));
+        .then(data => mostrarServicios(data))
+        .catch(error => console.error("Error cargando los servicios:", error));
 });
 
-let mostrarServicios = (services) =>{
-    const containerCard = document.getElementById("cards__services");
+let mostrarServicios = (services) => {
+    const containerCard = document.getElementById("services");
+
     services.forEach(service => {
         const item = document.createElement("div");
-        item.classList.add("service");
+        item.classList.add("cards__services");
+
         item.innerHTML = `
-            <img src=${services.src}>
+            <img src="${service.src}" alt="${service.alt}" class="cards__services__image">
+            <h3 class="cards__services__title">${service.title}</h3>
+            <p class="cards__services__tech">${service.tecnologia}</p>
+            <a href="${service.url}" target="_blank" class="cards__services__button">Ver más</a>
         `;
+
         containerCard.appendChild(item);
     });
-}
+};
+ 

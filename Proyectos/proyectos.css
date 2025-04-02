@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #FFF;
+    --secondary-color: #0288d15c;
+    --terthiary-color: black;
+
+    --poppins-font: 'Poppins', sans-serif;
+};
+
+a {
+    text-decoration: none;
+}
+
 .body__content{
     display: flex;
     flex-direction: column;
@@ -12,8 +26,70 @@
 }
 
 .cards{
-    border: 1px solid white;
-    width: 50vw;
-    padding: 250px;
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;  
+    padding: 10px;
+    height: auto;
+    margin-bottom: 50px;
 
+    border: 1px solid white;
+}
+
+.cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+
+.cards__services{
+    height: 450px;
+    width: 280px;
+    color: var(--primary-color);
+    border-radius: 7px;
+    text-align: center;
+    background-color: #000b11;
+
+    border: 1px solid rgb(131, 131, 131);
+}
+
+.cards__services__image{
+    height: auto;
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+    object-fit: cover;
+}
+
+.cards__services__title {
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-style: normal;
+}
+
+.cards__services__tech {
+    font-family: var(--poppins-font);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8rem;
+    text-align: justify;
+    margin:30px 20px;
+}
+
+.cards__services__button{
+    border-radius: 9px;
+    border: 1px solid var(--primary-color);
+    width: fit-content;
+    padding: 4px 10px;
+    color: var(--primary-color);
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-style: normal;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.cards__services__button:hover{
+    font-size: 1.2rem;
+    padding: 5px 12px;
 }
