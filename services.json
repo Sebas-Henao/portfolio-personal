@@ -1,0 +1,17 @@
+[
+    {
+     "src"        : "./assets/proyectos/amigo secreto.jpg",
+     "title"      : "Juego de amigo secreto",
+     "alt"        : "amigo secreto",
+     "tecnologia" : "Se emplearon tecnologías como:  JavaScript, Css y Html",
+     "url"        : "https://sebas-henao.github.io/challenge-secret-friend/"
+    },
+    {
+     "src"        : "***",
+     "title"      : "***",
+     "alt"        : "***",
+     "tecnologia" : "***",
+     "url"        : "https://"
+    },
+
+]

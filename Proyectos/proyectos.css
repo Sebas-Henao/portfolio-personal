@@ -1,0 +1,19 @@
+.body__content{
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid white;
+}
+
+.body__content__text{
+    height: auto;
+
+    border: 1px solid white;
+}
+
+.cards{
+    border: 1px solid white;
+    width: 50vw;
+    padding: 250px;
+
+}
