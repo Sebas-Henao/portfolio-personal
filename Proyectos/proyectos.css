@@ -15,14 +15,10 @@ a {
 .body__content{
     display: flex;
     flex-direction: column;
-    
-    border: 1px solid white;
 }
 
 .body__content__text{
     height: auto;
-
-    border: 1px solid white;
 }
 
 .cards{
@@ -32,8 +28,6 @@ a {
     padding: 10px;
     height: auto;
     margin-bottom: 50px;
-
-    border: 1px solid white;
 }
 
 .cards__container {
@@ -44,14 +38,13 @@ a {
 }
 
 .cards__services{
-    height: 450px;
+    height: 530px;
     width: 280px;
     color: var(--primary-color);
     border-radius: 7px;
     text-align: center;
-    background-color: #000b11;
-
-    border: 1px solid rgb(131, 131, 131);
+    background-color: #000b11d0;
+    border: 1px solid rgba(187, 172, 172, 0.89);
 }
 
 .cards__services__image{
@@ -67,13 +60,22 @@ a {
     font-style: normal;
 }
 
-.cards__services__tech {
+.cards__services__tech{
     font-family: var(--poppins-font);
     font-weight: 300;
     font-style: normal;
     font-size: 0.8rem;
     text-align: justify;
-    margin:30px 20px;
+    margin:20px 20px;
+}
+
+.cards__services__state {
+    font-family: var(--poppins-font);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 5px 20px 25px 20px;
 }
 
 .cards__services__button{

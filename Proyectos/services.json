@@ -3,7 +3,8 @@
      "src"        : "../assets/proyectos/amigo secreto.jpg",
      "title"      : "Juego de amigo secreto",
      "alt"        : "amigo secreto",
-     "tecnologia" : "Se emplearon tecnologías como:  JavaScript, Css y Html",
+     "tecnologia" : "JavaScript ES6 (Lógica y manejo de DOM), Css3 (Estilos) y Html5",
+     "state"      : "Finalizado",
      "url"        : "https://sebas-henao.github.io/challenge-secret-friend/"
     },
     {
@@ -11,6 +12,7 @@
      "title"      : "Ejemplo para probar",
      "alt"        : "test",
      "tecnologia" : "Informativo",
+     "state"      : "Finalizado",
      "url"        : "https://www.google.com"
     }
 

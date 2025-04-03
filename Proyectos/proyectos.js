@@ -14,8 +14,9 @@ let mostrarServicios = (services) => {
 
         item.innerHTML = `
             <img src="${service.src}" alt="${service.alt}" class="cards__services__image">
-            <h3 class="cards__services__title">${service.title}</h3>
-            <p class="cards__services__tech">${service.tecnologia}</p>
+            <h2 class="cards__services__title">${service.title}</h2>
+            <p class="cards__services__tech">Tecnologías: ${service.tecnologia}</p>
+            <p class="cards__services__state"><strong>Estado:</strong> ${service.state}</p>
             <a href="${service.url}" target="_blank" class="cards__services__button">Ver más</a>
         `;
 
