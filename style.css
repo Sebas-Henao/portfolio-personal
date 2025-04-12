@@ -13,6 +13,10 @@
     margin: 0;
 }
 
+strong {
+    color: rgb(0, 255, 255);
+}
+
 body {
     box-sizing: border-box;
     height: 90vh;
@@ -25,6 +29,7 @@ body {
 a {
     text-decoration: none;
 }
+
 
 .navBar {
     padding: 40px 0px 0px 290px;
@@ -52,6 +57,129 @@ a {
     color: rgba(21, 228, 255, 0.692)
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 10, 0.9);
+    z-index: 1;
+    display: none;
+    
+}
+
+dialog {
+    z-index: 2;
+    position: relative;
+}
+
+.contact__me__modal { 
+    box-sizing: border-box;
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover auto;
+    background-position: center;
+    width: 50%;
+    border: 1px solid rgba(187, 172, 172, 0.89);
+    border-radius: 5px;
+    box-shadow: 15px 15px 12px black;
+}
+
+.contact__modal__container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#contact__modal__container{
+    margin-left: auto;
+}
+
+
+/* pendiente */
+
+#close__contact__me__modal {  
+    margin: 3px 2px;
+}
+
+.contact__modal__email{
+    font-size: 1.1rem;
+    font-family: var(--poppins-font);
+    font-weight: 300;
+    font-style: normal;
+    color: var(--primary-color);
+    text-align: justify;
+    margin: 15px;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact__modal__email{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__modal__email__img {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.contact__modal__email__copy{
+    color: var(--primary-color);
+    font-family: var(--poppins-font);
+    font-weight: 200;
+    font-size: 0.9rem;
+    font-style: normal;
+}
+
+.contact__modal__wpp {
+    font-size: 1rem;
+    border-radius: 9px;
+    border: 1px solid var(--primary-color);
+    width: fit-content;
+    padding: 4px 10px;
+    color: var(--primary-color);
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    background-color: #5cc77c;
+    border: 2px solid black;
+    box-shadow: 5px 2px 1px black;
+    margin: 15px auto;
+}
+
+.contact__modal__wpp img{
+    margin-right: 6px;
+}
+
+.contact__modal__download{
+    font-size: 1rem;
+    border-radius: 9px;
+    border: 1px solid var(--primary-color);
+    width: fit-content;
+    padding: 10px 10px;
+    color: var(--primary-color);
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    background-color: #1f79df;
+    border: 2px solid black;
+    box-shadow: 5px 2px 1px black;
+    margin: 15px auto;
+}
+
+.contact__modal__download img{
+    margin-right: 10px;
+}
+
 .body__content {
     display: flex;
     justify-content: space-between;
@@ -64,7 +192,7 @@ a {
     height: 70vh;
 }
 
-.body__content__text__title {
+.body__content__text__title, .contact__modal_container__title{
     font-size: 1.8rem;
     font-family: var(--poppins-font);
     color: var(--primary-color);
@@ -74,7 +202,7 @@ a {
     margin: 3px 10px 25px 10px;
 }
 
-.body__content__text__parr {
+.body__content__text__parr, .contact__modal__parr {
     font-size: 1.1rem;
     font-family: var(--poppins-font);
     font-weight: 300;
@@ -85,7 +213,7 @@ a {
     height: auto;
 }
 
-.body__content__text__subtitle{
+.body__content__text__subtitle, .contact__modal__subtitle{
     font-size: 1.1rem;
     font-family: var(--poppins-font);
     font-weight: 500;
@@ -196,6 +324,34 @@ a {
         text-align: center;
         font-size: 1.2rem;
     }
+
+    .contact__me__modal{
+        margin: 0 auto;
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact__modal__email{
+        flex-direction: column;
+    }
+
+    .contact__modal_container__title, 
+    .contact__modal__subtitle, 
+    .contact__modal__email {
+        width: 90%;
+        margin: 10px auto;
+        text-align: justify;
+        
+    }
+
+    .contact__modal__parr,
+    .contact__modal__email {
+        width: 90%;
+        text-align: justify;
+        font-size: 1rem;
+    }
+
     .body__content{
         flex-direction: column-reverse;
         margin: 0 auto;
@@ -203,6 +359,7 @@ a {
         align-items: center;
         text-align: center;
     }
+
     .body__content__text{
         width: 100%;
         padding: 10px;

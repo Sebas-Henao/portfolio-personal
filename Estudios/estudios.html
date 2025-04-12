@@ -8,17 +8,47 @@
     <title>Mis Estudios</title>
 </head>
 <body>
+    <div id="overlay"></div>
     <header class="navBar">
         <nav class="navBar__nav">
             <a href="../index.html" class="navBar__nav__links">Sobre mí</a>
             <a href="./Estudios/estudios.html" class="navBar__nav__links">Estudios</a>
             <a href="../experiencia/experiencia.html" class="navBar__nav__links">Experiencia</a>
             <a href="../proyectos/proyectos.html" class="navBar__nav__links">Proyectos</a>
-            <a href="../contacto/contacto.html" class="navBar__nav__links">Contáctame</a>
+            <a id="open__contact__me__modal" href="#" class="navBar__nav__links">Contáctame</a>
         </nav>
     </header>
 
     <main class="body">
+        <dialog class="contact__me__modal" id="contact__me__modal">
+            <div class="contact__modal__container">
+                <h1 class="contact__modal_container__title">¡Parece que te gustaría contactarme!</h1>
+                <a id="close__contact__me__modal" href="#"><img src="../assets/close.png" alt="cerrar" width="30px"
+                        height="30px"></a>
+            </div>
+        
+            <h3 class="contact__modal__subtitle">¡Vamos al siguiente paso!</h3>
+            <p class="contact__modal__parr">Aquí encuentras varios canales por los que me puedes contactar:</p>
+            <h3 class="contact__modal__subtitle">Email:</h3>
+            <div class="contact__modal__email">
+                <img class="contact__modal__email__img" src="../assets/email.png" alt="email icon" width="40px" height="40px">
+                <p class="contact__modal__email__img" id="text__to__copy">
+                    <strong> sebastianhenao227@gmail.com</strong>
+                </p>
+                <a class="contact__modal__email__copy" id="copy__email" href="#"><img id="copy__icon"
+                        class="contact__modal__email__img" src="../assets/copy.png" alt="btn copy" width="20px"
+                        height="20px">¿copiar?</a>
+            </div>
+            <h3 class="contact__modal__subtitle">¡O si prefiere, escríbeme a mi WhatsApp!</h3>
+            <a class="contact__modal__wpp" href="https://w.app/kvieot"><img src="../assets/wpp.png" alt="btn Wpp" width="40px"
+                    height="40px">Escríbeme</a>
+            <h3 class="contact__modal__subtitle">¿Deseas conseguir mi CV?, has click en el botón de "Obtener CV" para
+                descargarla:</h3>
+            <a class="contact__modal__download" href="../assets/cv/CV-Sebastian Henao.pdf" download="CV-Sebastian Henao.pdf">
+                <img src="../assets/download.png" alt="btn download" width="20px" height="20px"> Obtener CV
+            </a>
+        </dialog>
+
         <div class="body__content">
             <section class="body__content__text">
                 <h1 class="body__content__text__title"><img src="../assets/EMC2.png" width="40px" heigth="40px"> Mis estudios</h1>
@@ -88,5 +118,5 @@
         </p>
     </footer>
 </body>
-<script src="../logic.js"></script>
+<script src="./estudios.js"></script>
 </html>

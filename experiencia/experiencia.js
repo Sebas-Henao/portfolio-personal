@@ -27,10 +27,10 @@ btnCopy.addEventListener('click', (event) => {
 
     navigator.clipboard.writeText(text).then(() => {
         alert(`📋 texto copiado con éxito: ${text}`);
-        copyIcon.src = './assets/copy-check.png';
+        copyIcon.src = '../assets/copy-check.png';
 
         setTimeout(() => {
-            copyIcon.src = './assets/copy.png';
+            copyIcon.src = '../assets/copy.png';
         }, 2000);
 
     }).catch((err) => {
