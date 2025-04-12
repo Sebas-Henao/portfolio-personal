@@ -48,10 +48,11 @@ a {
 }
 
 .cards__services__image{
-    height: auto;
+    height: 45%;
     width: 100%;
     border-radius: 7px 7px 0px 0px;
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cards__services__title {
@@ -89,6 +90,7 @@ a {
     font-style: normal;
     align-items: center;
     background-color: var(--secondary-color);
+    margin: 0px 5px;
 }
 
 .cards__services__button:hover{

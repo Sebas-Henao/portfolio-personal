@@ -1,11 +1,12 @@
 [
     {
-     "src"        : "../assets/proyectos/amigo secreto.jpg",
-     "title"      : "Ejemplo para probar",
-     "alt"        : "test",
-     "tecnologia" : "Informativo",
+     "src"        : "../assets/proyectos/juego de número secreto.jpg",
+     "title"      : "Juego número secreto",
+     "alt"        : "número secreto",
+     "tecnologia" : "JavaScript ES6 (Lógica y manejo de DOM), Css3 (Estilos) y Html5",
      "state"      : "Finalizado",
-     "url"        : "https://www.google.com"
+     "url"        : "https://sebas-henao.github.io/secret-number/",
+     "repo"       : "https://github.com/Sebas-Henao/secret-number"
     },
     {
      "src"        : "../assets/proyectos/amigo secreto.jpg",
@@ -13,7 +14,8 @@
      "alt"        : "amigo secreto",
      "tecnologia" : "JavaScript ES6 (Lógica y manejo de DOM), Css3 (Estilos) y Html5",
      "state"      : "Finalizado",
-     "url"        : "https://sebas-henao.github.io/challenge-secret-friend/"
+     "url"        : "https://sebas-henao.github.io/challenge-secret-friend/",
+     "repo"       : "https://github.com/Sebas-Henao/challenge-secret-friend"
     }
 
 ]
