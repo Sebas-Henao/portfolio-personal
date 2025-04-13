@@ -54,8 +54,10 @@ a {
     color:rgba(151, 151, 151, 0.774)
 }
 
-.navBar__nav__links:active {
-    color: rgba(21, 228, 255, 0.692)
+.navBar__nav__links.active {
+    color: rgba(21, 228, 255, 0.692);
+    font-weight: 600;
+    border-bottom: 2px solid rgba(21, 228, 255, 0.692);
 }
 
 #overlay {

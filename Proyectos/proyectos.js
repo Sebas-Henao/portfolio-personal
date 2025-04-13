@@ -68,6 +68,24 @@ btnCopy.addEventListener('click', (event) => {
    
 });
 
+//marcar opción seleccionada
+document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll(".navBar__nav__links");
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+        const href = link.getAttribute("href");
+
+        if (href !== "#") {
+            const linkPage = href.split("/").pop(); 
+
+            if (linkPage === currentPage) {
+                link.classList.add("active");
+            }
+        }
+    });
+});
+
 // Valor en años footer
 
 const getYear = () => {
