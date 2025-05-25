@@ -25,6 +25,15 @@
      "state"      : "Finalizado",
      "url"        : "https://sebas-henao.github.io/portfolio-personal/",
      "repo"       : "https://github.com/Sebas-Henao/portfolio-personal"
+    },
+    {
+     "src"        : "../assets/proyectos/imagen-principal.jpg",
+     "title"      : "Análisis de datos comerciales",
+     "alt"        : "Challenge 1 dataScience: AluraStore",
+     "tecnologia" : "Python 3 (Lógica), Colab -google( palataforma de trabajo), Pandas (Lectura de datos csv), Matplotlib (generación gráficos)",
+     "state"      : "Finalizado (DataScience)",
+     "url"        : "https://colab.research.google.com/drive/1txlBLuRFCZBbz1xMlHLvY3fjpc-RRw1E?hl=es-ES",
+     "repo"       : "https://github.com/Sebas-Henao/Challenge-DataScience-store-evaluation/tree/main"
     }
 
 ]

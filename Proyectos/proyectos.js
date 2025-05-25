@@ -17,8 +17,10 @@ let mostrarServicios = (services) => {
             <h2 class="cards__services__title">${service.title}</h2>
             <p class="cards__services__tech">Tecnologías: ${service.tecnologia}</p>
             <p class="cards__services__state"><strong>Estado:</strong> ${service.state}</p>
-            <a href="${service.repo}" target="_blank" class="cards__services__button">repositorio</a>
-            <a href="${service.url}" target="_blank" class="cards__services__button">visitar</a>
+            <div class= "cards__services__button__container">
+                <a href="${service.repo}" target="_blank"     class="cards__services__button">repositorio</a>
+                <a href="${service.url}" target="_blank"     class="cards__services__button">visitar</a>
+            </div>
         `;
 
         containerCard.appendChild(item);
