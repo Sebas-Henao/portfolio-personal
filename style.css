@@ -100,8 +100,6 @@ dialog {
 }
 
 
-/* pendiente */
-
 #close__contact__me__modal {  
     margin: 3px 2px;
 }
@@ -162,6 +160,13 @@ dialog {
 }
 
 .contact__modal__download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10
+}
+
+.contact__modal__download__cv{
     font-size: 1rem;
     border-radius: 9px;
     border: 1px solid var(--primary-color);
@@ -171,12 +176,10 @@ dialog {
     font-family: var(--poppins-font);
     font-weight: 500;
     font-style: normal;
-    display: flex;
-    align-items: center;
     background-color: #1f79df;
     border: 2px solid black;
     box-shadow: 5px 2px 1px black;
-    margin: 15px auto;
+    margin: 15px 10px;
 }
 
 .contact__modal__download img{
@@ -353,6 +356,17 @@ dialog {
         width: 90%;
         text-align: justify;
         font-size: 1rem;
+    }
+
+    .contact__modal__download{
+        flex-direction: column;
+        gap:10px;
+        align-items: center;
+
+    }
+
+    .contact__modal__download__cv{
+        margin: 5px 0;
     }
 
     .body__content{
