@@ -34,6 +34,15 @@
      "state"      : "Finalizado (DataScience)",
      "url"        : "https://colab.research.google.com/drive/1txlBLuRFCZBbz1xMlHLvY3fjpc-RRw1E?hl=es-ES",
      "repo"       : "https://github.com/Sebas-Henao/Challenge-DataScience-store-evaluation/tree/main"
+    },
+    {
+     "src"        : "../assets/proyectos/imagen-principal-evasion.jpg",
+     "title"      : "Análisis de evasión de clientes",
+     "alt"        : "Challenge 2 dataScience: evasión clientes",
+     "tecnologia" : "Python 3 (Lógica), Colab -google( palataforma de trabajo), Pandas (Lectura de datos csv), NumPy(manipulación de datos), Matplotlib- Seaborn - Plotly (generación gráficos)",
+     "state"      : "Finalizado (DataScience)",
+     "url"        : "https://colab.research.google.com/drive/1V8lR3YciOlLfxEMN_e8zQVF__qE9qyXZ?usp=sharing",
+     "repo"       : "https://github.com/Sebas-Henao/Challenge-DataScience-Churn-evaluation"
     }
 
 ]
