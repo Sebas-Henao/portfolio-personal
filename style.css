@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --primary-color: #FFF ;
+    --primary-color: #000000 ;
     --secondary-color: #09122C;
     --terthiary-color: black; 
 
@@ -14,17 +14,29 @@
 }
 
 strong {
-    color: rgb(0, 255, 255);
+    color: rgb(0, 68, 255);
 }
 
 body {
     box-sizing: border-box;
     height: 90vh;
-    background-image: url('./assets/background.jpg');
-    background-repeat:repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+body.dark-mode {
+    background-color: #0b1e2d;
+    color: #ffffff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode h3,
+body.dark-mode li,
+body.dark-mode strong{
+    color: #ffffff;
 }
 
 a {
@@ -55,9 +67,9 @@ a {
 }
 
 .navBar__nav__links.active {
-    color: rgba(21, 228, 255, 0.692);
+    color: rgb(47, 51, 63);
     font-weight: 600;
-    border-bottom: 2px solid rgba(21, 228, 255, 0.692);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.692);
 }
 
 #overlay {
@@ -66,7 +78,7 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 10, 0.9);
+    background-color: rgba(0, 0, 10, 0.226);
     z-index: 1;
     display: none;
     
@@ -79,14 +91,10 @@ dialog {
 
 .contact__me__modal { 
     box-sizing: border-box;
-    background-image: url('./assets/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover auto;
-    background-position: center;
     width: 50%;
-    border: 1px solid rgba(187, 172, 172, 0.89);
+    border: 1px solid rgba(100, 94, 94, 0.89);
     border-radius: 5px;
-    box-shadow: 15px 15px 12px black;
+    box-shadow: 8px 5px 20px rgb(63, 61, 61);
 }
 
 .contact__modal__container{
@@ -132,7 +140,7 @@ dialog {
 .contact__modal__email__copy{
     color: var(--primary-color);
     font-family: var(--poppins-font);
-    font-weight: 200;
+    font-weight: 500;
     font-size: 0.9rem;
     font-style: normal;
 }
@@ -184,6 +192,31 @@ dialog {
 
 .contact__modal__download img{
     margin-right: 10px;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.2);
+}
+
+body {
+    background-color: #ffffff;
+    color: #111111;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+body.dark-mode {
+    background-color: #0b1e2d;
+    color: #f5f5f5;
 }
 
 .body__content {
@@ -258,7 +291,7 @@ dialog {
 }
 
 #git {
-    background-color: var(--primary-color);
+    background-color: #bdbdbd;
     color:var(--terthiary-color);
     border: 2px solid black;
     box-shadow: 5px 2px 1px black;
@@ -288,14 +321,14 @@ dialog {
     box-shadow: 15px 10px 1px black;
     margin-top: 65px;
 
-    animation: levitar 3s linear 0.3s infinite;
+    animation: levitar 5s linear 0.4s infinite;
 }
 
 @keyframes levitar {
-    0%{transform: rotate(5deg)}
-    50%{transform: translate(0px, -15px); 
+    0%{transform: translate(0px, -5px)}
+    50%{transform: translate(0px, 5px); 
         box-shadow:20px 20px 10px rgba(0, 0, 0, 0.329);}
-    100%{transform: rotate(5deg)}
+    100%{transform: translate(0px,0px)}
 }
 
 .footer { 

@@ -1,9 +1,12 @@
 // Modal
 
-const openModal = document.getElementById('open__contact__me__modal');
+const textElements = document.querySelectorAll("h1, h2, h3,  p, a, strong");
 const closeModal = document.getElementById('close__contact__me__modal');
+const openModal = document.getElementById('open__contact__me__modal');
 const modal = document.getElementById('contact__me__modal');
+const toggleBtn = document.getElementById("theme-toggle");
 const overlay = document.getElementById('overlay');
+const body = document.body;
 
 openModal.addEventListener('click', () => {
     modal.showModal();
@@ -58,6 +61,42 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+// Modo claro predeterminado
+if (localStorage.getItem("theme")) {
+  localStorage.setItem("theme", "light");
+}
+
+// Aplicar el tema guardado
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-mode");
+  toggleBtn.textContent = "🌙";
+} else {
+  toggleBtn.textContent = "☀️";
+}
+
+// Cambiar al hacer clic
+toggleBtn.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+
+  if (body.classList.contains("dark-mode")) {
+    toggleBtn.textContent = "🌙";
+      localStorage.setItem("theme", "dark");
+
+      textElements.forEach(el => {
+          el.style.color = "#ffffff";
+      });
+  } else {
+    toggleBtn.textContent = "☀️";
+      localStorage.setItem("theme", "light");
+      
+      textElements.forEach(el => {
+      el.style.color = "#111111";
+    });
+  }
+});
+
 
 // Valor en años footer
 
