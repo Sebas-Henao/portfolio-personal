@@ -43,6 +43,16 @@
      "state"      : "Finalizado (DataScience)",
      "url"        : "https://colab.research.google.com/drive/1V8lR3YciOlLfxEMN_e8zQVF__qE9qyXZ?usp=sharing",
      "repo"       : "https://github.com/Sebas-Henao/Challenge-DataScience-Churn-evaluation"
+    },
+    {
+     "src"        : "../assets/proyectos/imagenprincipal-evasion-parte 2-ML.jpg",
+     "title"      : "Análisis de evasión de clientes con ML",
+     "alt"        : "Challenge dataScience: evasión clientes ML",
+     "tecnologia" : "Python 3 (Lógica), Colab -google( palataforma de trabajo), Pandas (Lectura de datos csv), NumPy(manipulación de datos), Matplotlib- Seaborn - Plotly (generación gráficos, Sklearn(ML)",
+     "state"      : "Finalizado (DataScience)",
+     "url"        : "https://colab.research.google.com/drive/1ZiDa1qyrXcdJmmE2P0buUrZenE6PKOxc?usp=sharing",
+     "repo"       : "https://github.com/Sebas-Henao/Challenge-DataScience-MachineLearning-Predict-churn"
     }
+
 
 ]
