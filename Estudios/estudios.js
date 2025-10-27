@@ -97,6 +97,18 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('.accordion-btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.accordion');
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      item.classList.toggle('open');
+    });
+  });
+});
+
 
 // Valor en años footer
 

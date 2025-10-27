@@ -231,7 +231,8 @@ body.dark-mode {
     height: 70vh;
 }
 
-.body__content__text__title, .contact__modal_container__title{
+.body__content__text__title, 
+.contact__modal_container__title{
     font-size: 1.8rem;
     font-family: var(--poppins-font);
     color: var(--primary-color);
@@ -241,7 +242,18 @@ body.dark-mode {
     margin: 3px 10px 25px 10px;
 }
 
-.body__content__text__parr, .contact__modal__parr {
+.body__content__text__sub-title{
+   font-size: 1.3rem;
+    font-family: var(--poppins-font);
+    color: var(--primary-color);
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    margin: 3px 10px 25px 60px; 
+}
+
+.body__content__text__parr, 
+.contact__modal__parr {
     font-size: 1.1rem;
     font-family: var(--poppins-font);
     font-weight: 300;
@@ -252,7 +264,8 @@ body.dark-mode {
     height: auto;
 }
 
-.body__content__text__subtitle, .contact__modal__subtitle{
+.body__content__text__subtitle, 
+.contact__modal__subtitle{
     font-size: 1.1rem;
     font-family: var(--poppins-font);
     font-weight: 500;

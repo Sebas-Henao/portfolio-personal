@@ -16,3 +16,65 @@ li, ul, ol {
   margin: 5px 0px;
   text-align: justify;
 }
+
+.accordion-list { 
+  list-style: none;
+  padding: 0; 
+  margin: 0; 
+}
+
+.accordion { 
+  margin-bottom: 0.6rem; 
+}
+
+.accordion-btn {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: transparent;
+    border: none;
+    padding: 0.4rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+    color: inherit;
+}
+.accordion-btn img { 
+  display: inline-block; 
+}
+
+.accordion-arrow {
+    margin-left: auto;
+    transition: transform 0.25s ease;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    padding-left: 1.6rem;
+}
+.accordion-content li { 
+  margin: 0.35rem 0; 
+  list-style: none; 
+}
+
+.accordion.open .accordion-content { 
+  max-height: 1000px; 
+ }
+
+.accordion.open .accordion-arrow { 
+  transform: rotate(90deg); 
+}
+
+.accordion-btn:focus { 
+  outline: 2px solid #6ca0ff; 
+  border-radius: 4px; 
+}
+
+.insinias_space{
+  margin: 0 0 4rem 0;
+  text-align: center;
+}
